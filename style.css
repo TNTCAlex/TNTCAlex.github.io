@@ -1,19 +1,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
-}
-
-.canvas {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.section {
-  height: 100vh;
-  scroll-snap-align: start;
-  position: relative;
 }
 
 /* HOME IMAGE */
@@ -28,9 +15,9 @@ html, body {
   object-fit: cover;
 }
 
-/* HOME TEXT */
+/* HOME TEXT (FREE SCROLL) */
 .home-text-section {
-  min-height: 60vh; /* chỉnh theo cảm giác */
+  min-height: 60vh;
   display: flex;
   align-items: center;
   padding-left: 8%;
@@ -47,14 +34,13 @@ html, body {
   opacity: 0.7;
 }
 
-/* SNAP */
-.canvas {
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-}
-
+/* SNAP SECTIONS */
 .section {
   height: 100vh;
   scroll-snap-align: start;
+}
+
+/* SNAP ON BODY */
+body {
+  scroll-snap-type: y mandatory;
 }
