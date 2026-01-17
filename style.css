@@ -16,35 +16,45 @@ html, body {
   position: relative;
 }
 
-/* HOME */
-.home img {
+/* HOME IMAGE */
+.home-image {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.home-text {
-  position: absolute;
-  bottom: 15%;
-  left: 8%;
-  color: white;
+/* HOME TEXT */
+.home-text-section {
+  min-height: 60vh; /* chỉnh theo cảm giác */
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  background: #000;
+  color: #fff;
 }
 
 .home-text h1 {
   font-size: 3rem;
-  margin: 0;
+  margin-bottom: 0.5rem;
 }
 
 .home-text p {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
-/* placeholders */
-.placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-  background: #111;
-  color: #555;
+/* SNAP */
+.canvas {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
 }
